@@ -1,7 +1,7 @@
 // ./hooks/useInput.js
 import { useState } from "react";
 
-const useInput = (initialValue) => {
+export const useInput = (initialValue) => {
   const [value, setValue] = useState(initialValue);
   return [
     // 복사, 붙여넣기 하고 싶었던 props들
@@ -10,5 +10,3 @@ const useInput = (initialValue) => {
     () => setValue(initialValue),
   ];
 };
-
-export default useInput;

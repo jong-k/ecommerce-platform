@@ -1,22 +1,14 @@
 import React from "react";
 import Color from "./Color";
+import { useColors } from "./ColorProvider";
 
-// props로 App 컴포넌트에서 colors를 전달받음
-const ColorList = ({
-  colors = [],
-  onRemoveColor = (f) => f,
-  onRateColor = (f) => f,
-}) => {
+const ColorList = () => {
+  const { colors } = useColors(); // useContext 훅으로 Context.Consumer에 접근
   if (!colors.length) return <div>표시할 색이 없습니다.</div>;
   return (
     <div>
       {colors.map((color) => (
-        <Color
-          key={color.id}
-          {...color}
-          onRemove={onRemoveColor}
-          onRate={onRateColor}
-        />
+        <Color key={color.id} {...color} />
       ))}
     </div>
   );

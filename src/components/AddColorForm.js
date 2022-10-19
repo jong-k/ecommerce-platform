@@ -1,16 +1,17 @@
 // AddColorForm.js
 import React from "react";
-import useInput from "../hooks/useInput";
+import { useInput } from "../hooks/useInput";
+import { useColors } from "./ColorProvider";
 
-const AddColorForm = ({ onNewColor = (f) => f }) => {
+const AddColorForm = () => {
   const [titleProps, resetTitle] = useInput("");
   const [colorProps, resetColor] = useInput("#000000");
+  const { addColor } = useColors();
 
-  // submit event가 발생하면 작동하는 함수
   const submit = (e) => {
     e.preventDefault();
-    onNewColor(titleProps.value, colorProps.value);
-    resetTitle(); // submit 후 값을 빈 문자열로 초기화
+    addColor(titleProps.value, colorProps.value);
+    resetTitle();
     resetColor();
   };
   return (
