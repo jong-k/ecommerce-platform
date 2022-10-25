@@ -1,22 +1,20 @@
 import React, { useState, useEffect } from "react";
 
-const Checkbox = () => {
+const App = () => {
   const [checked, setChecked] = useState(false);
+  const toggle = () => {
+    setChecked((checked) => !checked);
+  };
   useEffect(() => {
     alert(`checked: ${checked.toString()}`);
-    // localStorage.setItem("checkbox-value", checked);
   });
 
   return (
     <>
-      <input
-        type="checkbox"
-        value={checked}
-        onChange={() => setChecked(!checked)}
-      />
+      <input type="checkbox" value={checked} onChange={toggle} />
       {checked ? "checked" : "not checked"}
     </>
   );
 };
 
-export default Checkbox;
+export default App;

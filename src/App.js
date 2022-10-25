@@ -1,16 +1,34 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+
+const firstUser = {
+  id: "0391-3233-3201",
+  firstName: "Bill",
+  lastName: "Wilson",
+  city: "Missoula",
+  state: "Montana",
+  email: "bwilson@mtnwilsons.com",
+  admin: false,
+};
 
 const App = () => {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    console.log("useEffect!");
-    return () => console.log(count); // 2번 순서 clean-up 함수
-  }, [count]);
+  const [user, setUser] = useState(firstUser);
 
   return (
     <div>
-      <h2>{count}</h2>
-      <button onClick={() => setCount(count + 1)}>+</button>
+      <h1>
+        {user.firstName} {user.lastName} - {user.admin ? "Admin" : "User"}
+      </h1>
+      <p>Email: {user.email}</p>
+      <p>
+        Location: {user.city}, {user.state}
+      </p>
+      <button
+        onClick={() => {
+          setUser({ ...user, admin: true });
+        }}
+      >
+        Make Admin
+      </button>
     </div>
   );
 };
