@@ -16,6 +16,7 @@
 ### 6. 리액트 상태 관리
 - useState, useRef, useContext
 ### 7. Hooks로 컴포넌트 개선하기
+- useEffect, useLayoutEffect, useMemo, useCallback, React.memo
 ### 8. 데이터 포함시키기
 ### 9. Suspense
 ### 10. 리액트 테스트
