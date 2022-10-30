@@ -18,6 +18,7 @@
 ### 7. Hooks로 컴포넌트 개선하기
 - useEffect, useLayoutEffect, useMemo, useCallback, React.memo
 ### 8. 데이터 포함시키기
+- fetch
 ### 9. Suspense
 ### 10. 리액트 테스트
 ### 11. 리액트 라우터
