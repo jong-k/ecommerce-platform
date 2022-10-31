@@ -6,6 +6,7 @@ const saveJSON = (key, data) => localStorage.setItem(key, JSON.stringify(data));
 function GitHubUser({ login }) {
   const [data, setData] = useState(loadJSON(`user:${login}`)); // 1. 최초 null // 8. data에 load된 데이터 할당됨
 
+  // data 값이 바뀔 때마다 호출되는 훅
   useEffect(() => {
     if (!data) return; // 3. data 없어서 리턴되고 끝 // 6. data 있으므로 실행 가능
     if (data.login === login) return; // 9. data 와 login 같으면 effect 종료
