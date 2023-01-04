@@ -80,6 +80,8 @@ $transition: 0.3s ease-in-out all;
 
 body {
   font-family: $defaultFonts;
+  box-sizing: border-box;
+  background: rgba($lightBeige, 0.1);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -99,3 +101,107 @@ button {
     transition: $transition;
   }
 }
+
+// container
+.container {
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+// main-board
+.main-board {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+// section
+.status-section {
+  width: 28vw;
+  height: 70vh;
+  background: $lightBeige;
+  margin: 1rem;
+  padding: 1rem;
+
+  .section-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid black;
+  }
+
+  // issue add button
+  .add-btn {
+    background: inherit;
+    width: 30%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .add-btn-text {
+      font-size: 1.1rem;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background: $blackNavy;
+    }
+  }
+
+  // modal
+  .overlay {
+    background: rgba($blackNavy, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    .modal {
+      width: 50vw;
+      height: 50vh;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      background: $lightBeige;
+      padding: 1rem;
+
+      .modal-header {
+        margin-bottom: 1rem;
+      }
+
+      .modal-content-form {
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        input, select, textarea {
+          height: 2.5rem;
+          margin-bottom: 1rem;
+        }
+
+        button {
+          height: 2.5rem;
+        }
+
+      }
+    }
+  }
+}
+
+// card
+.card {
+  padding: 1rem;
+  width: auto;
+  height: 13%;
+  background: rgba($oliveGreen, 0.3);
+}
+
+

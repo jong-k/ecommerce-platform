@@ -1,5 +1,13 @@
+import Section from "./components/common/Section";
+
 function App() {
-  return <h2>Hello from App</h2>;
+  return (
+    <main className="main-board">
+      <Section category="할 일" />
+      <Section category="진행 중" />
+      <Section category="완료" />
+    </main>
+  );
 }
 
 export default App;
