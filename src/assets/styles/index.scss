@@ -42,3 +42,60 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+// global fonts
+// 해피니스 산스 Title : Heading
+@font-face {
+  font-family: 'Happiness-Sans-Title';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// 나늠스퀘어 네오 : 일반
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// global variables
+// fonts
+$defaultFonts: 'Happiness-Sans-Title';
+$headingFonts: 'NanumSquareNeo-Variable';
+
+// color
+$blackNavy: #181D31;
+$oliveGreen: #678983;
+$beige: #E6DDC4;
+$lightBeige: #E6DDC4;
+
+// shadow
+$shadow: 0 4px 8px -1px rgba(0, 0, 0, 0.2);
+$shadow2: 0 4px 8px -1px rgba(0, 0, 0, 0.5);
+
+// transition
+$transition: 0.3s ease-in-out all;
+
+body {
+  font-family: $defaultFonts;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headingFonts;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+button {
+  border: none;
+  box-shadow: $shadow;
+
+  &:hover {
+    color: palevioletred;
+    transition: $transition;
+  }
+}
