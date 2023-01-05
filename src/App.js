@@ -3,9 +3,9 @@ import Section from "./components/common/Section";
 function App() {
   return (
     <main className="main-board">
-      <Section category="할 일" />
-      <Section category="진행 중" />
-      <Section category="완료" />
+      <Section header="할 일" category="todo" />
+      <Section header="진행 중" category="pending" />
+      <Section header="완료" category="done" />
     </main>
   );
 }
