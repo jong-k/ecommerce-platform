@@ -11,6 +11,7 @@ const Section = ({ header, category }) => {
   useEffect(() => {
     if (!issueList.length)
       localStorage.setItem(category, JSON.stringify(issueList));
+    else setIssueList(JSON.parse(localStorage.getItem(category)));
   }, []);
 
   return (
@@ -20,7 +21,12 @@ const Section = ({ header, category }) => {
       <button className="add-btn" onClick={() => setOpenModal(true)}>
         <span className="add-btn-text">+ 새로 만들기</span>
       </button>
-      <Modal open={openModal} onClose={() => setOpenModal(false)} />
+      <Modal
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+        list={issueList}
+        phase={category}
+      />
     </main>
   );
 };

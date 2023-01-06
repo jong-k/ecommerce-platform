@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const STATUS_LIST = [
   { name: "할 일", value: "todo" },
@@ -6,18 +6,19 @@ const STATUS_LIST = [
   { name: "완료", value: "done" },
 ];
 
-const PERSON_LIST = ["손흥민", "김민재"];
-
-const Modal = ({ open, onClose }) => {
+const Modal = ({ open, onClose, list, phase }) => {
   if (!open) return;
-  console.log(PERSON_LIST);
+
+  const [todoList, setTodoList] = useState([]);
+  const [pendingList, setPendingList] = useState([]);
+  const [doneList, setDoneList] = useState([]);
 
   const [issueContent, setIssueContent] = useState({
     id: Date.now(),
     title: "",
     person: "",
     description: "",
-    status: "todo",
+    status: phase,
     dueDate: "",
   });
 
@@ -31,16 +32,31 @@ const Modal = ({ open, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(issueContent);
-
-    if (!localStorage.getItem(issueContent.status)) {
-      localStorage.setItem(issueContent.status, JSON.stringify([]));
+    if (issueContent.status === "todo") {
+      if (todoList.length) setTodoList([...todoList, issueContent]);
+      else setTodoList([issueContent]);
+      localStorage.setItem(issueContent.status, JSON.stringify(todoList));
     }
-    const arr = JSON.parse(localStorage.getItem(issueContent.status));
-    arr.push(issueContent);
-    console.log(arr);
-    localStorage.setItem(issueContent.status, JSON.stringify(arr));
+    if (issueContent.status === "pending") {
+      setPendingList([...pendingList, issueContent]);
+      localStorage.setItem(issueContent.status, JSON.stringify(pendingList));
+    }
+    if (issueContent.status === "done") {
+      setDoneList([...doneList, issueContent]);
+      localStorage.setItem(issueContent.status, JSON.stringify(doneList));
+    }
+    console.log(todoList, pendingList, doneList);
     onClose();
   };
+
+  // 첫 렌더링 시 로컬스토리지에서 각각 단계별 이슈 데이터 받아와서 저장
+  useEffect(() => {
+    console.log(todoList, pendingList, doneList);
+    setTodoList(JSON.parse(localStorage.getItem("todo")));
+    setPendingList(JSON.parse(localStorage.getItem("pending")));
+    setDoneList(JSON.parse(localStorage.getItem("done")));
+    console.log("sucsex!");
+  }, []);
 
   return (
     <div className="overlay" onClick={onClose}>
