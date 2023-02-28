@@ -1,0 +1,6 @@
+@use "src/styles/variables" as v;
+
+.header {
+  font-family: v.$headingFonts;
+  font-size: 2rem;
+}

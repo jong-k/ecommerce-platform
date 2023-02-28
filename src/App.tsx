@@ -1,5 +1,12 @@
+import Layout from "./components/Layout";
+import Board from "./components/Board";
+
 function App() {
-  return <div className="cursor-pointer">hello</div>;
+  return (
+    <Layout>
+      <Board />
+    </Layout>
+  );
 }
 
 export default App;

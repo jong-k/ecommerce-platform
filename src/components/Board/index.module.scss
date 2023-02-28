@@ -1,0 +1,18 @@
+@use "src/styles/variables" as v;
+
+.board {
+  width: v.$boardWidth;
+  display: flex;
+  box-shadow: rgba(9, 30, 66, 0.25) 0 4px 8px -2px, rgba(9, 30, 66, 0.08) 0 0 0 1px;
+}
+
+.column {
+  flex: 1;
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}

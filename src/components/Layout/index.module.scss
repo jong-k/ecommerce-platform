@@ -1,0 +1,8 @@
+@use "src/styles/variables" as v;
+
+.layout {
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  width: v.$boardWidth;
+  border-radius: 20px;
+}
