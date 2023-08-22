@@ -1,0 +1,12 @@
+{
+  "name": "type-challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jong-k/type-challenges.git",
+  "author": "jong-k <fully.charged07@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.5.1",
+    "typescript": "^5.1.6"
+  }
+}
