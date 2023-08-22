@@ -1,6 +1,9 @@
 # type-challenges
-> TypeScript Playground 에서 실행 후 풀이를 기록
+> 타입스크립트 하루 한 문제
+
+https://github.com/type-challenges/type-challenges
 
 ## 목차
 ### Easy
-#### 4. Pick<T, K> 구현
+- 4. Pick<T, K> 구현
+- 7. Readonly<T> 구현
