@@ -1,11 +1,11 @@
-type a = "a" | "b" | "c";
-type b = "a";
+type aaa = "a" | "b" | "c";
+type bbb = "a";
 
-type c = "a" | "b" | "c" | "d";
-type d = "a" | "b";
+type ccc = "a" | "b" | "c" | "d";
+type ddd = "a" | "b";
 
-type e = string | number | (() => void);
-type f = Function;
+type eee = string | number | (() => void);
+type fff = Function;
 
 // Exclude 유틸리티 타입 직접 구현하기
 
@@ -14,11 +14,11 @@ type f = Function;
 // 거짓이면 T를 그대로 반환
 type MyExclude<T, U> = T extends U ? never : T;
 
-type temp1 = MyExclude<a, b>; // "b" | "c"
-type temp2 = Exclude<a, b>; // "b" | "c"
+type temp1 = MyExclude<aaa, bbb>; // "b" | "c"
+type temp2 = Exclude<aaa, bbb>; // "b" | "c"
 
-type temp3 = MyExclude<c, d>; // "c" | "d"
-type temp4 = Exclude<c, d>; // "c" | "d"
+type temp3 = MyExclude<ccc, ddd>; // "c" | "d"
+type temp4 = Exclude<ccc, ddd>; // "c" | "d"
 
-type temp5 = MyExclude<e, f>; // string | number
-type temp6 = Exclude<e, f>; // string | number
+type temp5 = MyExclude<eee, fff>; // string | number
+type temp6 = Exclude<eee, fff>; // string | number
