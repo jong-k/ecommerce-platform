@@ -9,7 +9,7 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
 <details>
   <summary>8월</summary>
 
-<table style="border: 2px solid white">
+<table>
   <thead>
     <colgroup>
       <col span="6">
@@ -55,7 +55,7 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
 <details>
   <summary>9월</summary>
 
-<table style="border: 2px solid white">
+<table>
   <thead>
     <colgroup>
       <col span="6">
@@ -76,7 +76,7 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
     <tr>
       <th>1w</th>
       <th>-</th>
-      <th style="color: green">4, 7</th>
+      <th style="color: white; background-color: thistle">TEST</th>
       <th style="color: green">11</th>
       <th style="color: green">14</th>
       <th>-</th>
@@ -85,6 +85,26 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
     </tr>
     <tr>
       <th>2w</th>
+      <th style="color: green">18, 43, 2</th>
+      <th style="color: white; background-color: thistle">TEST</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>휴</th>
+      <th>식</th>
+    </tr>
+        <tr>
+      <th>3w</th>
+      <th style="color: green">18, 43, 2</th>
+      <th style="color: white; background-color: thistle">TEST</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>휴</th>
+      <th>식</th>
+    </tr>
+        <tr>
+      <th>4w</th>
       <th style="color: green">18, 43, 2</th>
       <th style="color: white; background-color: thistle">TEST</th>
       <th></th>
