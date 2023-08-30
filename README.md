@@ -41,7 +41,7 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
       <th>5w</th>
       <th style="color: green">18, 43, 2</th>
       <th style="color: white; background-color: thistle">TEST</th>
-      <th></th>
+      <th style="color: green">3</th>
       <th></th>
       <th></th>
       <th>휴</th>
@@ -132,3 +132,4 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
 ### Medium
 
 - 2.return-type : ReturnType<T> 를 직접 구현
+- 3.omit : Omit<T, K> 를 여러 방법으로 직접 구현
