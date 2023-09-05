@@ -15,26 +15,26 @@ type MyOmitA<T, K> = Pick<T, Exclude<keyof T, K>>;
 type TtodoPreviewA = MyOmitA<Itodo, "description" | "title">;
 type OA = Omit<Itodo, "description" | "title">;
 
-const todo1: TtodoPreviewA = {
+const todo31: TtodoPreviewA = {
   completed: false,
 };
 
-const todo2: OA = {
+const todo32: OA = {
   completed: false,
 };
 
 // 2. Pick과 Exclude를 직접 구현해서 활용
-type MyExclude<T, U> = T extends U ? never : T;
-type MyOmitB<T, K extends keyof T> = { [P in MyExclude<keyof T, K>]: T[P] };
+type MyExcludeTemp<T, U> = T extends U ? never : T;
+type MyOmitB<T, K extends keyof T> = { [P in MyExcludeTemp<keyof T, K>]: T[P] };
 
 type TtodoPreviewB = MyOmitB<Itodo, "description" | "title">;
 type OB = Omit<Itodo, "description" | "title">;
 
-const todo3: TtodoPreviewB = {
+const todo33: TtodoPreviewB = {
   completed: false,
 };
 
-const todo4: OB = {
+const todo34: OB = {
   completed: false,
 };
 
@@ -46,12 +46,12 @@ type MyOmitC<T, K extends keyof T> = { [P in keyof T as P extends K ? never : P]
 type TtodoPreviewC = MyOmitC<Itodo, "description">;
 type OC = Omit<Itodo, "description">;
 
-const todo5: TtodoPreviewC = {
+const todo35: TtodoPreviewC = {
   title: "test",
   completed: false,
 };
 
-const todo6: OC = {
+const todo36: OC = {
   title: "test",
   completed: false,
 };
