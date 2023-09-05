@@ -42,8 +42,8 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
       <th style="color: green">18, 43, 2</th>
       <th style="color: white; background-color: thistle">TEST</th>
       <th style="color: green">3</th>
-      <th></th>
-      <th></th>
+      <th>-</th>
+      <th>-</th>
       <th>휴</th>
       <th>식</th>
     </tr>
@@ -76,10 +76,10 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
     <tr>
       <th>1w</th>
       <th>-</th>
-      <th style="color: white; background-color: thistle">TEST</th>
-      <th style="color: green">11</th>
-      <th style="color: green">14</th>
-      <th>-</th>
+      <th style="color: green">8</th>
+      <th style="color: green"></th>
+      <th style="color: green"></th>
+      <th></th>
       <th>휴</th>
       <th>식</th>
     </tr>
