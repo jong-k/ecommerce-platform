@@ -8,8 +8,9 @@ interface Todo8 {
 // K가 주어지지 않으면, Readonly<T> 처럼 모든 프로퍼티를 읽기 전용으로 만들기
 
 // Omit<T, K> 를 통해 T에서 K를 빼낸 객체를 만든다 (T - K)
-// Pick<T, K> 를 통해 T에서 K만 골라낸 객체를 만든다 (K)
+// Pick<T, K> 를 통해 T에서 K만 골라낸 객체를 만들고
 // Readonly<Pick<T, K>> 를 통해 K의 모든 프로퍼티에 readonly를 적용한다
+// 그리고 인터섹션 타입을 통해 두 객체의 프로퍼티를 모두 포함하는 타입을 만들어낸다
 
 // K의 기본값에 keyof T 넣기
 type MyReadonly2<T, K extends keyof T = keyof T> = Omit<T, K> & Readonly<Pick<T, K>>;
