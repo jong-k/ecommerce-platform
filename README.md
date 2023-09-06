@@ -77,7 +77,7 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
       <th>1w</th>
       <th>-</th>
       <th style="color: green">8</th>
-      <th style="color: green"></th>
+      <th style="color: green">9</th>
       <th style="color: green"></th>
       <th></th>
       <th>휴</th>
@@ -85,7 +85,7 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
     </tr>
     <tr>
       <th>2w</th>
-      <th style="color: green">18, 43, 2</th>
+      <th style="color: green"></th>
       <th style="color: white; background-color: thistle">TEST</th>
       <th></th>
       <th></th>
@@ -95,7 +95,7 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
     </tr>
         <tr>
       <th>3w</th>
-      <th style="color: green">18, 43, 2</th>
+      <th style="color: green"></th>
       <th style="color: white; background-color: thistle">TEST</th>
       <th></th>
       <th></th>
@@ -105,7 +105,7 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
     </tr>
         <tr>
       <th>4w</th>
-      <th style="color: green">18, 43, 2</th>
+      <th style="color: green"></th>
       <th style="color: white; background-color: thistle">TEST</th>
       <th></th>
       <th></th>
