@@ -78,7 +78,7 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
       <th>-</th>
       <th style="color: green">8</th>
       <th style="color: green">9</th>
-      <th style="color: green"></th>
+      <th style="color: green">10</th>
       <th></th>
       <th>휴</th>
       <th>식</th>
