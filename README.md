@@ -79,13 +79,13 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
       <th style="color: green">8</th>
       <th style="color: green">9</th>
       <th style="color: green">10</th>
-      <th></th>
+      <th style="color: green">15</th>
       <th>휴</th>
       <th>식</th>
     </tr>
     <tr>
       <th>2w</th>
-      <th style="color: green"></th>
+      <th style="color: green">12</th>
       <th style="color: white; background-color: thistle">TEST</th>
       <th></th>
       <th></th>
