@@ -85,7 +85,7 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
     </tr>
     <tr>
       <th>2w</th>
-      <th style="color: green">12</th>
+      <th style="color: green">16</th>
       <th style="color: white; background-color: thistle">TEST</th>
       <th></th>
       <th></th>
