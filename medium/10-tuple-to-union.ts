@@ -9,9 +9,11 @@ type Arr = ["1", "2", "3"];
 // 아니면 never(절대 발생하지 않는 타입) 반환
 type TupleToUnion1<T> = T extends ReadonlyArray<infer K> ? K : never;
 type union101 = TupleToUnion1<Arr>; // "1" | "2" | "3"
+type temp101 = TupleToUnion1<[]>; // never
 
 // 2.
 
 // 튜플 : readonly any[]
 type TupleToUnion2<T extends readonly any[]> = T[number];
 type union102 = TupleToUnion1<Arr>; // "1" | "2" | "3"
+type temp102 = TupleToUnion2<[]>; // never
