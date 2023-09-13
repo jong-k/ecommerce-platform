@@ -87,9 +87,9 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
       <th>2w</th>
       <th style="color: green">16</th>
       <th style="color: white; background-color: thistle">TEST</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th style="color: green">189</th>
+      <th style="color: green"></th>
+      <th style="color: green"></th>
       <th>휴</th>
       <th>식</th>
     </tr>
@@ -97,9 +97,9 @@ https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
       <th>3w</th>
       <th style="color: green"></th>
       <th style="color: white; background-color: thistle">TEST</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th style="color: green"></th>
+      <th style="color: green"></th>
+      <th style="color: green"></th>
       <th>휴</th>
       <th>식</th>
     </tr>
