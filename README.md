@@ -1,6 +1,8 @@
 # type-challenges
+> type-challenges 문제 풀이 및 TypeScript docs 요약 정리
 
-https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
+- https://github.com/type-challenges/type-challenges/blob/main/README.ko.md
+- https://www.typescriptlang.org/docs/handbook/intro.html
 
 ## 목차
 
